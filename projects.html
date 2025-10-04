@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dana baqer | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#dc2626',
+                        secondary: '#000000'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="index.html">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/smiley.png" alt="Logo" class="w-8 h-8">
+                    </a>
+                    <a href="index.html" class="text-primary font-bold text-2xl tracking-tight hover-scale">
+                        dana baqer
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="gallery.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">gallery</a>
+                    <!-- <a href="projects.html" class="text-primary font-medium">projects</a> -->
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">about</a>
+                </div>
+                <div class="md:hidden select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Content -->
+    <main class="pt-20 min-h-screen bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-4">
+                    Projects
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Exploring the intersection of digital art, technology, and creative expression through various multimedia projects.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/IMG_2060.PNG" 
+                             alt="Digital Expressions" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Cats In Bahrain</h3>
+                        <p class="text-gray-600 mb-4">
+                            An illustrative series combining hand-drawn cats around the Kingdom of Bahrain.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2025</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/cat.PNG" 
+                             alt="Motion Graphics" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Motion Graphics</h3>
+                        <p class="text-gray-600 mb-4">
+                            Dynamic animations and visual effects that bring digital art to life through movement.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/star.PNG" 
+                             alt="Interactive Installations" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Interactive Installations</h3>
+                        <p class="text-gray-600 mb-4">
+                            Immersive digital experiences that engage viewers through interactive technology.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/apple.PNG" 
+                             alt="Visual Identity" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Visual Identity</h3>
+                        <p class="text-gray-600 mb-4">
+                            Brand development and visual storytelling through cohesive design systems.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/bag.png" 
+                             alt="Experimental Video" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Experimental Video</h3>
+                        <p class="text-gray-600 mb-4">
+                            Pushing the boundaries of video art through unconventional techniques and narratives.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-2xl border border-gray-200 overflow-hidden hover-scale">
+                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/crayon.PNG" 
+                             alt="Digital Sculpture" 
+                             class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Digital Sculpture</h3>
+                        <p class="text-gray-600 mb-4">
+                            3D modeling and digital fabrication exploring form and space in virtual environments.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2022</span>
+                            <a href="#" class="text-primary hover:text-red-700 transition-colors">
+                                <i data-feather="arrow-up-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-16">
+                <p class="text-gray-600 mb-6">Interested in collaborating or commissioning a project?</p>
+                <a href="mailto:contact@example.com" 
+                   class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-red-700 transition-colors duration-300 hover-scale">
+                    <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-gray-500 text-sm">
+                    © 2025 dana baqer. All rights reserved.
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/nastyscientist" class="text-gray-400 hover:text-primary transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

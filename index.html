@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dana baqer | Nasty Stuff Ahead</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#dc2626',
+                        secondary: '#000000'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .floating-smiley {
+            animation: floatAround 15s infinite linear;
+        }
+
+        @keyframes floatAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(100px, 50px) rotate(90deg);
+            }
+            50% {
+                transform: translate(50px, 100px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-50px, 50px) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+.hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="index.html">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/smiley.png" alt="Logo" class="w-8 h-8">
+                    </a>
+                    <a href="index.html" class="text-primary font-bold text-2xl tracking-tight hover-scale">
+                        dana baqer
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="gallery.html" class="text-primary font-medium">gallery</a>
+                    <!-- <a href="projects.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">projects</a> -->
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">about</a>
+                </div>
+<div class="md:hidden select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+</div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 bg-grid-gray-100 [mask-image:linear-gradient(0deg,white,transparent)]"></div>
+        <!-- Main Typography -->
+        <div class="text-center z-10 px-4">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/IMG_2060.PNG" alt="NASTY STUFF AHEAD" class="max-w-full h-auto mx-auto mb-8 select-none" style="max-height: 30vh; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+<!-- CTA Button -->
+            <div class="mt-12">
+                <a href="gallery.html" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-primary rounded-full overflow-hidden hover-scale transition-all duration-300 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <span class="relative z-10">explore</span>
+                    <div class="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <i data-feather="arrow-right" class="ml-2 relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+            </div>
+</div>
+<!-- Floating Elements -->
+        <div class="absolute w-32 h-32 opacity-40 floating-smiley" data-speed="2">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/apple.PNG" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+        <div class="absolute w-32 h-32 opacity-50 floating-smiley" data-speed="1.5">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/bag.png" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+        <div class="absolute w-32 h-32 opacity-60 floating-smiley" data-speed="3">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/cat.PNG" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+        <div class="absolute w-32 h-32 opacity-45 floating-smiley" data-speed="2.5">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/crayon.PNG" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+        <div class="absolute w-32 h-32 opacity-55 floating-smiley" data-speed="1.8">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/egg.png" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+        <div class="absolute w-32 h-32 opacity-65 floating-smiley" data-speed="2.2">
+            <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/star.PNG" alt="Floating Image" class="w-full h-full object-contain cursor-pointer hover:scale-125 transition-transform duration-300">
+        </div>
+</main>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-gray-500 text-sm">
+                    © 2025 dana baqer. All rights reserved.
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/nastyscientist" class="text-gray-400 hover:text-primary transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+</div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+        
+        // Enhanced floating smiley animation with drag and throw functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const smileys = document.querySelectorAll('.floating-smiley');
+            let isDragging = false;
+            let currentElement = null;
+            let offsetX = 0;
+            let offsetY = 0;
+            let velocityX = 0;
+            let velocityY = 0;
+            let lastX = 0;
+            let lastY = 0;
+            let lastTime = 0;
+            let animationFrameId = null;
+
+            // Set random initial positions
+            smileys.forEach(smiley => {
+                const speed = parseFloat(smiley.getAttribute('data-speed'));
+                const viewportWidth = window.innerWidth - 100;
+                const viewportHeight = window.innerHeight - 100;
+                
+                const randomX = Math.random() * viewportWidth;
+                const randomY = Math.random() * viewportHeight;
+                
+                smiley.style.left = `${randomX}px`;
+                smiley.style.top = `${randomY}px`;
+                smiley.style.animationDuration = `${20 / speed}s`;
+                smiley.style.cursor = 'grab';
+                
+                // Make elements draggable
+                smiley.addEventListener('mousedown', startDrag);
+                smiley.addEventListener('touchstart', startDrag);
+                
+                // Pause on hover
+                smiley.addEventListener('mouseenter', function() {
+                    this.style.opacity = '0.8';
+                });
+                
+                smiley.addEventListener('mouseleave', function() {
+                    this.style.opacity = this.getAttribute('data-speed') === '3' ? '0.6' : 
+                                       this.getAttribute('data-speed') === '1.5' ? '0.5' : '0.4';
+                });
+            });
+
+            function startDrag(e) {
+                e.preventDefault();
+                isDragging = true;
+                currentElement = e.target.closest('.floating-smiley');
+                
+                const rect = currentElement.getBoundingClientRect();
+                const clientX = e.clientX || e.touches[0].clientX;
+                const clientY = e.clientY || e.touches[0].clientY;
+                
+                offsetX = clientX - rect.left;
+                offsetY = clientY - rect.top;
+                
+                currentElement.style.animationPlayState = 'paused';
+                currentElement.style.cursor = 'grabbing';
+                currentElement.style.zIndex = '1000';
+                
+                lastX = clientX;
+                lastY = clientY;
+                lastTime = Date.now();
+                
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('touchmove', drag);
+                document.addEventListener('mouseup', stopDrag);
+                document.addEventListener('touchend', stopDrag);
+            }
+
+            function drag(e) {
+                if (!isDragging || !currentElement) return;
+                
+                e.preventDefault();
+                const clientX = e.clientX || e.touches[0].clientX;
+                const clientY = e.clientY || e.touches[0].clientY;
+                
+                // Calculate velocity
+                const currentTime = Date.now();
+                const deltaTime = currentTime - lastTime;
+                
+                if (deltaTime > 0) {
+                    velocityX = (clientX - lastX) / deltaTime * 16;
+                    velocityY = (clientY - lastY) / deltaTime * 16;
+                }
+                
+                lastX = clientX;
+                lastY = clientY;
+                lastTime = currentTime;
+                
+                // Update position
+                currentElement.style.left = `${clientX - offsetX}px`;
+                currentElement.style.top = `${clientY - offsetY}px`;
+                currentElement.style.transform = 'scale(1.1)';
+            }
+
+            function stopDrag() {
+                if (!isDragging || !currentElement) return;
+                
+                isDragging = false;
+                currentElement.style.cursor = 'grab';
+                currentElement.style.zIndex = '';
+                currentElement.style.transform = '';
+                // Apply throw force
+                if (Math.abs(velocityX) > 0.05 || Math.abs(velocityY) > 0.05) {
+                    throwElement(currentElement, velocityX, velocityY);
+                } else {
+                    currentElement.style.animationPlayState = 'running';
+                }
+document.removeEventListener('mousemove', drag);
+                document.removeEventListener('touchmove', drag);
+                document.removeEventListener('mouseup', stopDrag);
+                document.removeEventListener('touchend', stopDrag);
+                
+                currentElement = null;
+            }
+            function throwElement(element, vx, vy) {
+                if (animationFrameId) {
+                    cancelAnimationFrame(animationFrameId);
+                }
+                
+                let posX = parseFloat(element.style.left);
+                let posY = parseFloat(element.style.top);
+                const friction = 0.8; // Increased friction for quicker stopping
+                // Increase throw force slightly
+                vx *= 0.5;
+                vy *= 0.5;
+function animateThrow() {
+                    posX += vx;
+                    posY += vy;
+                    
+                    // Apply friction
+                    vx *= friction;
+                    vy *= friction;
+                    
+                    // Boundary checking
+                    const maxX = window.innerWidth - element.offsetWidth;
+                    const maxY = window.innerHeight - element.offsetHeight;
+                    
+                    if (posX < 0) {
+                        posX = 0;
+                        vx = -vx * 0.6; // Reduced bounce
+                    } else if (posX > maxX) {
+                        posX = maxX;
+                        vx = -vx * 0.6; // Reduced bounce
+                    }
+                    
+                    if (posY < 0) {
+                        posY = 0;
+                        vy = -vy * 0.6; // Reduced bounce
+                    } else if (posY > maxY) {
+                        posY = maxY;
+                        vy = -vy * 0.6; // Reduced bounce
+                    }
+                    
+                    element.style.left = `${posX}px`;
+                    element.style.top = `${posY}px`;
+                    // Continue animation if still moving (lower threshold for longer throw)
+                    if (Math.abs(vx) > 0.1 || Math.abs(vy) > 0.1) {
+                        animationFrameId = requestAnimationFrame(animateThrow);
+                    } else {
+                        element.style.animationPlayState = 'running';
+                        animationFrameId = null;
+                    }
+}
+                
+                animationFrameId = requestAnimationFrame(animateThrow);
+            }
+// Simple scroll animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.hover-scale').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
