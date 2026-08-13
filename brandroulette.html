@@ -134,24 +134,31 @@
 </head>
 <body>
 
-<nav class="portfolio-nav">
-  <div class="portfolio-nav-inner">
-    <a href="index.html" class="portfolio-brand">
-      <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/smiley.png" alt="Logo">
-      <span class="portfolio-brand-name">dana baqer</span>
-    </a>
-
-    <div class="portfolio-links">
-      <a href="gallery.html">gallery</a>
-      <a href="brandroulette.html" class="active">roulette</a>
-      <a href="about.html">about</a>
-    </div>
-
-    <div class="portfolio-mobile">
-      <button aria-label="Menu"><i data-feather="menu"></i></button>
-    </div>
-  </div>
-</nav>
+  <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="index.html">
+                        <img src="https://huggingface.co/spaces/dnac1d/nastyfront-studio/resolve/main/images/smiley.png" alt="Logo" class="w-8 h-8">
+                    </a>
+                    <a href="index.html" class="text-primary font-bold text-2xl tracking-tight hover-scale">
+                        dana baqer
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <a href="gallery.html" class="text-primary font-medium">gallery</a>
+                    <a href="brandroulette.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">roulette</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">about</a>
+                </div>
+<div class="md:hidden select-none" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+</div>
+        </div>
+    </nav>
 
 <div class="wrap">
 <header>
